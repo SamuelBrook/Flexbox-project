@@ -1,0 +1,64 @@
+/* set the height of the html document to the view port */
+html,
+body {
+    height: 100vh;
+    font-family: 'Roboto', Helvetica, sans-serif;
+    /* background-color: #1F2937; */
+    margin: 0;
+}
+
+/* style head of the document */
+.head {
+    display: flex;
+    flex-direction: column;
+    padding-left: 175px;
+    padding-right: 175px;
+    padding-bottom: 8px;
+    background-color: #1F2937;
+    color: #F9FAF8;
+}
+
+.head-top,
+.head-main {
+    display: flex;
+    padding: 8px;
+    justify-content: space-between;
+}
+
+.head-top {
+    margin-bottom: 100px;
+    margin-top: 10px;
+    justify-content: space-between;
+    align-items: center;
+    flex: auto;
+    gap: 24px;
+}
+
+.head-text {
+    padding-right: 34px;
+}
+
+#header-link-one {
+    margin-left: auto;
+}
+
+#head-logo {
+    font-size: 24px;
+}
+
+#title {
+    font-size: 62px;
+    font-weight: 900;
+    margin-bottom: 24px;
+}
+
+.link,
+.subtext {
+    font-size: 18px; 
+    color: #E5E7EB;
+}
+
+#compound {
+    width: 650px;
+    height: auto;
+}
