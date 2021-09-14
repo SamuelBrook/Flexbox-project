@@ -1,4 +1,4 @@
-/* set the height of the html document to the view port */
+/* set the height of the html document to the view port, set font */
 html,
 body {
     height: 100vh;
@@ -7,13 +7,13 @@ body {
     margin: 0;
 }
 
-/* style head of the document */
+/* style head of the document, includes group selecting of elements from the top line and main line of the header*/
 .head {
     display: flex;
     flex-direction: column;
     padding-left: 175px;
     padding-right: 175px;
-    padding-bottom: 8px;
+    padding-bottom: 14px;
     background-color: #1F2937;
     color: #F9FAF8;
 }
@@ -25,6 +25,14 @@ body {
     justify-content: space-between;
 }
 
+.link,
+.subtext,
+#image-box {
+    font-size: 18px; 
+    color: #E5E7EB;
+}
+
+/* style the top line of the header */
 .head-top {
     margin-bottom: 100px;
     margin-top: 10px;
@@ -34,31 +42,77 @@ body {
     gap: 24px;
 }
 
-.head-text {
-    padding-right: 34px;
+#head-logo {
+    font-size: 24px;
 }
 
 #header-link-one {
     margin-left: auto;
 }
 
-#head-logo {
-    font-size: 24px;
+/* style the main line of the header */
+.head-text {
+    padding-right: 34px;
 }
 
 #title {
     font-size: 62px;
     font-weight: 900;
-    margin-bottom: 24px;
+    margin-bottom: 40px;
 }
 
-.link,
 .subtext {
-    font-size: 18px; 
-    color: #E5E7EB;
+    line-height: 28px;
 }
 
+/* style image in head */
 #compound {
     width: 650px;
     height: auto;
+}
+
+#image-box {
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+}
+
+
+/* style information section */
+
+.information {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.info-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info-pic {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border: 4px solid #3882F6;
+    border-radius: 25px;
+}
+
+#title2 {
+    font-size: 40px;
+    font-weight: 900;
+    color: #1F2937;
+    margin-top: 50px;
+    margin-bottom: 40px;
 }
